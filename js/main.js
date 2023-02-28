@@ -17,6 +17,7 @@ const winningCombinations = {
     combo7:["1", "4", "7"],
     combo8:["2", "5", "8"]
 }
+
   /*----- state variables -----*/
 //   2) Define required variables used to track the state of the game:
 
@@ -44,6 +45,8 @@ function handleClick(evt){
 // console.log(evt.target.innerText = "X")
 }
 
+
+
 squareEls.forEach(function(evt){
   evt.addEventListener("click", handleClick)
 })
@@ -53,4 +56,16 @@ squareEls.forEach(function(evt){
 //     console.log(squareEls[i])
 // }
 // 6) Handle a player clicking the replay button:
-
+const resetButton = document.querySelector('#button')
+console.log(resetButton)
+resetButton.addEventListener("click", resetGame)
+function resetGame(){
+    squareEls.forEach(square)
+      
+    
+    console.log("I've been clicked")
+}
+function square (square){
+    square.innerHTML = ""
+    console.log("We're making progress")
+}
