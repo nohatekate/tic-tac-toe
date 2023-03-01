@@ -4,6 +4,7 @@ html {
   }
  h1 {
     text-align: center;
+    color: darkcyan
  } 
   #board {
     margin: auto;
@@ -13,9 +14,12 @@ html {
     flex-wrap: wrap;
     gap: 1vmin;
   }
+  #button {
+    color: darkcyan
+  }
   
   .square{
     width: 25vmin;
     height: 25vmin;
-    border: 1px solid lightblue
+    border: 1px solid darkcyan
   }
